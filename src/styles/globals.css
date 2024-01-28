@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* navbar start */
+header#navbar {
+  transition: all 0.2s;
+}
+
+header#navbar.navbar-white {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+header#navbar.navbar-white .container {
+  transition: all 0.2s;
+}
+/* navbar end */
+
+/* section start */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.section_gradient {
+  background: url("/texture_bg.png"),
+    -webkit-linear-gradient(left, #193f88 0%, #0e082c 99%);
+  background: url("/texture_bg.png"),
+    linear-gradient(to right, #193f88 0%, #0e082c 99%);
+  background-attachment: fixed;
+}
+
+.table_gradient {
+  background-image: -webkit-linear-gradient(left, #193f88 0%, #0e082c 99%);
+  background-image: linear-gradient(to right, #193f88 0%, #0e082c 99%);
+}
+.bg-white-tran {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* section end */
+/* animation */
+.bounceimg {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+/* animation end */
+
+/* mui override */
+#exchange .MuiFormLabel-root.MuiInputLabel-shrink {
+  background: white;
+  padding: 0 10px;
+}
+.MuiFormControl-root.mb-5 {
+  margin-bottom: 1.25rem !important;
+}
+.mySelect__value-container {
+  height: 35px;
+}
+/* mui override end */
+/* blog */
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.wraper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+/* blog end */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
