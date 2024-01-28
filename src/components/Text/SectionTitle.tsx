@@ -8,7 +8,7 @@ export default function SectionTitle({
   title,
   className,
   color,
-  borderColor,
+  borderColor
 }: TitleProps) {
   return (
     <div

@@ -18,7 +18,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
   subtitle = 'Try changing or removing some of your filters.',
   label = 'Remove all filters',
   showReset,
-  reset,
+  reset
 }) => {
   const router = useRouter();
 

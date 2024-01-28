@@ -22,7 +22,7 @@ const env = {
   GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET,
   NODE_ENV,
-  NEXTAUTH_SECRET,
+  NEXTAUTH_SECRET
 };
 
 export default env;

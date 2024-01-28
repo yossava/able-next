@@ -3,7 +3,7 @@
 import type {
   FieldErrors,
   FieldValues,
-  UseFormRegister,
+  UseFormRegister
 } from 'react-hook-form';
 import { BiDollar } from 'react-icons/bi';
 
@@ -26,7 +26,7 @@ const Input: React.FC<InputProps> = ({
   formatPrice,
   register,
   required,
-  errors,
+  errors
 }) => {
   return (
     <div className="w-full relative">

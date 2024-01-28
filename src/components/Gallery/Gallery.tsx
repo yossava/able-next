@@ -17,7 +17,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/1.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">PIK</div>
@@ -27,7 +27,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/2.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">PIK</div>
@@ -37,7 +37,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/3.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">PIK</div>
@@ -47,7 +47,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/4.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">Central Park Mall</div>
@@ -57,7 +57,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/5.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">Central Park Mall</div>
@@ -67,7 +67,7 @@ export default function Gallery() {
               className="w-full h-40 lg:h-60 rounded-tl-md rounded-tr-md bg-no-repeat bg-center"
               style={{
                 background: 'url(/gallery/6.webp)',
-                backgroundSize: 'cover',
+                backgroundSize: 'cover'
               }}
             />
             <div className="p-3 bg-white font-semibold">Central Park Mall</div>

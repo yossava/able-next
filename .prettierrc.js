@@ -10,5 +10,5 @@ module.exports = {
   bracketSpacing: true,
   arrowParens: 'avoid',
   endOfLine: 'lf',
-  trailingComma: 'none',
+  trailingComma: 'none'
 };

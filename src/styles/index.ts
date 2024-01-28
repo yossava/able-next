@@ -16,7 +16,7 @@ export const QUERIES = {
   /** +1200px */
   laptopAndUp: `(min-width: ${tailwindTheme.extend.screens.lg})`,
   /** +1536px */
-  desktopAndUp: `(min-width: ${tailwindTheme.extend.screens.xl})`,
+  desktopAndUp: `(min-width: ${tailwindTheme.extend.screens.xl})`
 };
 
 interface Theme {
@@ -28,5 +28,5 @@ interface Theme {
 export const theme: Theme = {
   colors: { ...tailwindColors, ...tailwindTheme.extend.colors },
   screens: tailwindTheme.screens,
-  queries: QUERIES,
+  queries: QUERIES
 };

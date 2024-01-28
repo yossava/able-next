@@ -9,7 +9,7 @@ function FadeInWhenVisible({ children }: { children: React.ReactNode }) {
       transition={{ duration: 0.3 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 40 },
+        hidden: { opacity: 0, y: 40 }
       }}
     >
       {children}

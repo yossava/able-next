@@ -15,6 +15,7 @@
     "analyze": "ANALYZE=true next build",
     "eslint": "next lint --fix --dir src",
     "prettier": "prettier --write .",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
     "lint": "yarn eslint && yarn prettier",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "postbuild": "next-sitemap && yarn prisma generate",

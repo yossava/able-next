@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   outline,
   small,
   icon: Icon,
-  isLoading,
+  isLoading
 }) => {
   return (
     <button

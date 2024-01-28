@@ -30,8 +30,8 @@ module.exports = {
 
         'chore',
 
-        'revert',
-      ],
-    ],
-  },
+        'revert'
+      ]
+    ]
+  }
 };
