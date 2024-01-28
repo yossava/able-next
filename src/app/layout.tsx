@@ -9,7 +9,7 @@ import type { ChildrenProps } from '@/types';
 export const metadata = {
   description:
     'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia!',
-  keywords: 'money, exchange',
+  keywords: 'money, exchange, money exchange',
   title: 'Able Group'
 };
 
