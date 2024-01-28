@@ -90,6 +90,10 @@ header#navbar.navbar-white .container {
 .mySelect__value-container {
   height: 35px;
 }
+
+.MuiTabPanel-root {
+  padding: 0;
+}
 /* mui override end */
 /* blog */
 .page-wrapper {

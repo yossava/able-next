@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </FadeInWhenVisibleOpacity>
 
-        <div className="container mx-auto grid grid-cols-12 gap-5 p-3">
+        <div className="container mx-auto grid grid-cols-12 gap-10 p-3">
           <FadeInWhenVisible className="lg:col-span-6 col-span-12">
             <div className="">
               <SectionTitle
