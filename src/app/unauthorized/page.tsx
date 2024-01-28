@@ -4,11 +4,9 @@ import { useEffect } from 'react';
 
 import EmptyState from '@/components/EmptyState';
 
-interface UnauthorizeStateProps {
-  error: Error;
-}
+interface UnauthorizeStateProps {}
 
-const UnauthorizeState: React.FC<UnauthorizeStateProps> = ({ error }) => {
+const UnauthorizeState: React.FC<UnauthorizeStateProps> = error => {
   useEffect(() => {
     // eslint-disable-next-line no-console
     console.error(error);
