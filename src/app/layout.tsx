@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 
-import { Inter } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
 import { DataProvider } from '@/context/StoreContext';
 import MainLayout from '@/layouts/MainLayout/MainLayout';
@@ -13,7 +13,7 @@ export const metadata = {
   title: 'Able Group'
 };
 
-const inter = Inter({
+const nunito = Nunito({
   subsets: ['latin'],
   display: 'swap',
   adjustFontFallback: false
@@ -22,7 +22,7 @@ const inter = Inter({
 export default async function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${nunito.className}`}>
         <DataProvider>
           <MainLayout>{children}</MainLayout>
         </DataProvider>
