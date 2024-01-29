@@ -1,5 +1,8 @@
 'use client';
 
+import { TextField } from '@mui/material';
+import Image from 'next/image';
+
 import Card from '@/components/Card/Card';
 import { useData } from '@/context/StoreContext';
 
@@ -170,30 +173,40 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="contact-map pb-section bg-white px-3 pb-20 pt-10 text-gray-700">
-        <div className="mx-auto max-w-5xl">
-          <div className="contact-form">
-            <h2 className="mb-7 text-2xl md:text-3xl -mt-2">Get in Touch</h2>
-            <form className="space-y-5">
-              <input
-                type="text"
-                placeholder="Name*"
-                className="bg-[#f4f4f4] w-full rounded-lg focus:outline outline-primary outline-1 font-medium px-5 py-4"
+      <div className="bg-white px-3 pb-20 pt-10 text-gray-700">
+        <div className="max-w-5xl mx-auto">
+          <div className="p-2">
+            <Image
+              className="mx-auto lg:hidden"
+              src="/ask.png"
+              width={300}
+              height={300}
+              alt="ask"
+            />
+            <p className="text-lg font-semibold text-gray-600">
+              Want to ask a question?
+            </p>
+          </div>
+          <div className="bg-white p-2" id="form">
+            <form id="contactForm">
+              <TextField
+                fullWidth
+                label="Your Name"
+                variant="outlined"
+                className="mb-5"
               />
-              <input
-                type="email"
-                placeholder="Email*"
-                className="bg-[#f4f4f4] w-full rounded-lg focus:outline outline-primary outline-1 font-medium px-5 py-4"
+              <TextField
+                fullWidth
+                label="Your Email Address"
+                variant="outlined"
+                className="mb-5"
               />
-              <input
-                type="text"
-                placeholder="Phone"
-                className="bg-[#f4f4f4] w-full rounded-lg focus:outline outline-primary outline-1 font-medium px-5 py-4"
-              />
-              <textarea
-                placeholder="Message"
-                rows={6}
-                className="bg-[#f4f4f4] w-full rounded-lg focus:outline outline-primary outline-1 font-medium px-5 py-4 h-min-20"
+              <TextField
+                fullWidth
+                label="Write your message here"
+                multiline
+                rows={4}
+                className="mb-5"
               />
               <div className="">
                 <button
@@ -201,20 +214,6 @@ export default function Contact() {
                   className="bg-secondary p-4 rounded text-white flex justify-center space-x-2 items-center w-full md:w-[200px]"
                 >
                   <span>SEND MESSAGE</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
                 </button>
               </div>
             </form>
